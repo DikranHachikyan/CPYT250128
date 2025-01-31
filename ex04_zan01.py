@@ -5,8 +5,9 @@ s2 = "Lorem Ipsum is simply dummy"
 
 # %%
 s3 = '''Lorem Ipsum is 
-simply dummy text of 
-the printing and 
+simply dummy text of.
+
+The printing and 
 typesetting'''
 
 print(s1)
@@ -28,5 +29,22 @@ def foo():
 foo()
 # %%
 print(foo.__doc__)
+
+# %%
+
+print( s1[4] )
+
+# %%
+print( s1[0:5])
+# %%
+print( s1[0:20:2])
+
+# %%
+
+print( 'python'.upper() )
+
+# %%
+
+print('-' * 30 )
 
 # %%
