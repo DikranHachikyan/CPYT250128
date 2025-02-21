@@ -1,8 +1,9 @@
 from time import time, sleep
-
+from functools import wraps
 
 # 1. дефиниция на декоратора
 def measure_time(func):
+    @wraps(func)
     def wrapper(*args, **kwargs):
         t = time()
         func(*args, **kwargs)
@@ -21,4 +22,5 @@ if __name__ == '__main__':
 
     foo(0.8)
 
+    print(f'2 name:{foo.__name__} doc str:{foo.__doc__}')
     print('---')
